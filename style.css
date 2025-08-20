@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --background-color1: rgb(6, 127, 175);
+  --text-color: white;
+  --hover-color: #d5dddf;
+  --active-color: #9cc8d4;
+}
+
+/* home section */
+#home {
+  display: grid;
+  grid-template-rows: 6rem auto;
+}
+
+/*  NAVBAR START */
+#navbar {
+  background-color: var(--background-color1);
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  margin: 0;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+#navbar ul li:last-child {
+  margin-right: 30px;
+}
+
+#navbar ul li:first-child {
+  margin-right: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: calc(1.5rem + 0.5vw);
+}
+
+nav a:hover {
+  color: var(--hover-color);
+}
+
+nav a:active {
+  color: var(--active-color);
+}
+
+#logo {
+  color: var(--text-color);
+  width: 4rem;
+  height: 4rem;
+}
+
+/*  NAVBAR END */
+
+/*  WELCOME start */
+
+#welcome-top {
+  background-color: var(--background-color1);
+  margin-top: 5rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+h1 {
+  display: block;
+  margin: auto;
+  color: var(--text-color);
+  font-size: calc(1.5rem + 2vw);
+  max-width: 700px;
+}
+
+#welcome-button {
+  width: 250px;
+  height: 3rem;
+  background-color: var(--text-color);
+  margin: 2rem auto;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.phone-number {
+  color: var(--text-color);
+  margin: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#welcome-button:hover {
+  background-color: var(--hover-color);
+}
+
+#welcome-button:active {
+  background-color: var(--active-color);
+}
+
+#welcome-bottom {
+  display: grid;
+  justify-content: center;
+}
+
+#welcome-img img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 20px;
+  min-width: 60vw;
+  max-width: 200px;
+  padding: 3px;
+  background-color: var(--text-color);
+  box-shadow: 10px 10px 20px;
+}
+
+#welcome-img img:hover {
+  box-shadow: 15px 15px 30px;
+  min-width: 61vw;
+}
+
+#welcome-img-text {
+  margin: auto;
+  max-width: 700px;
+}
+
+#welcome-img-text p {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+/*  WELCOME end */
