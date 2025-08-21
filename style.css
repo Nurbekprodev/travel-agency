@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: Rubik, sans-serif;
   font-weight: 400;
+  padding-top: 6rem;
 }
 
 :root {
@@ -19,7 +20,7 @@ body {
 /* home section */
 #home {
   display: grid;
-  grid-template-rows: 6rem auto;
+  /* grid-template-rows: 6rem auto; */
 }
 
 /*  NAVBAR START */
@@ -37,6 +38,7 @@ body {
   align-items: center;
   gap: 30px;
   list-style: none;
+  padding: 0 1rem;
 }
 
 #navbar ul li:last-child {
@@ -73,7 +75,7 @@ nav a:active {
 
 #welcome-top {
   background-color: var(--background-color1);
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   padding: 3rem;
   text-align: center;
 }
@@ -82,7 +84,7 @@ h1 {
   display: block;
   margin: auto;
   color: var(--text-color);
-  font-size: calc(1.5rem + 2vw);
+  font-size: clamp(1.5rem, 2vw + 1rem, 3.5rem);
   max-width: 700px;
 }
 
@@ -126,8 +128,8 @@ h1 {
   display: block;
   margin: 10px auto;
   border-radius: 20px;
+  max-width: 400px;
   min-width: 60vw;
-  max-width: 200px;
   padding: 3px;
   background-color: var(--text-color);
   box-shadow: 10px 10px 20px;
@@ -135,7 +137,7 @@ h1 {
 
 #welcome-img img:hover {
   box-shadow: 15px 15px 30px;
-  min-width: 61vw;
+  min-width: 60.5vw;
 }
 
 #welcome-img-text {
@@ -150,3 +152,81 @@ h1 {
 }
 
 /*  WELCOME end */
+
+/* SERVICES START */
+
+#services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 3rem 1rem;
+  max-width: 70vw;
+  place-items: center;
+  margin: auto;
+}
+
+.service {
+  padding: 2rem;
+  text-align: center;
+  background-color: red;
+  min-width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover; /* fills the div, crops if needed */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.service-definition {
+  padding: 2rem;
+  text-align: center;
+  min-width: 250px;
+}
+
+#services-header {
+  margin: auto;
+  text-align: center;
+}
+
+.service h2 {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: -10px;
+}
+
+.box-1 {
+  background-image: url("https://cdn.zarlasites.com/image/daa4f9e26d379fbff3e862b3616f51b27fa3d8ce642de36661cd5b29a47997c0/mobile-575@2x");
+}
+
+@media (max-width: 740px) {
+  #services {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 3rem 1rem;
+    max-width: 70vw;
+    place-items: center;
+  }
+
+  .service {
+    padding: 2rem;
+    justify-content: center;
+    background-color: red;
+    min-width: 400px;
+    height: 600px;
+  }
+
+  .service-definition {
+    margin-top: 0;
+    padding-bottom: 2rem;
+    text-align: center;
+    min-width: 400px;
+  }
+}
+
+/* SERVICES END */
