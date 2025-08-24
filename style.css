@@ -30,6 +30,25 @@ body {
   position: fixed;
   width: 100vw;
   margin: 0;
+  z-index: 1;
+}
+
+@media (max-width: 645px) {
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  #navbar ul li:last-child {
+    padding-left: 20px;
+  }
+
+  body {
+    padding-top: 21rem;
+  }
 }
 
 #navbar ul {
@@ -196,10 +215,40 @@ h1 {
   color: var(--text-color);
   font-size: 2rem;
   margin-bottom: -10px;
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  background-color: #9cc8d474;
+  border-radius: 6px;
+  z-index: 0;
 }
 
 .box-1 {
   background-image: url("https://cdn.zarlasites.com/image/daa4f9e26d379fbff3e862b3616f51b27fa3d8ce642de36661cd5b29a47997c0/mobile-575@2x");
+}
+
+.box-2 {
+  background-image: url("https://cdn.zarlasites.com/image/2f3e37a83519a4e903c0a26db410d1f65672de0454eaaf64f5cdddb050762c1d/mobile-575");
+}
+
+.box-3 {
+  background-image: url("https://cdn.zarlasites.com/image/54714f1c3ff0a7ac973562b4447f4a62ef5aa266fcb06feac1d2bd8f31de54dc/mobile-575@2x");
+}
+
+.box-4 {
+  background-image: url("https://cdn.zarlasites.com/image/7b125ba0e7d730ab8e8daec669a2a9a3d09118de2956e65ba86e40f15ce17e14/mobile-575@2x");
+}
+
+.box-5 {
+  background-image: url("https://cdn.zarlasites.com/image/64f21d541c5a7657d62fc9941041c6e87627d652ddd6f5015ec9cda3826acd1c/mobile-575@2x");
+}
+
+.box-6 {
+  background-image: url("https://cdn.zarlasites.com/image/f54e5b6d0a10655a048316450d75ff072de50066446e0da512d687dc07720dbe/mobile-575@2x");
+}
+
+.box-7 {
+  background-image: url("https://cdn.zarlasites.com/image/e44befa0694c885890f0850f7e52fe7d07e22b45723b0ad057f8b3b47a914429/mobile-575@2x");
 }
 
 @media (max-width: 740px) {
